@@ -6,7 +6,16 @@ import plotly.express as px
 
 # Streamlit App
 st.title("Interactive Data Dashboard")
-
+# Display summary as bullet points
+st.markdown("""
+### Summary:
+- Upload a CSV file to start exploring your data.
+- View a **preview** of the data.
+- Display **summary statistics** (mean, standard deviation, etc.) for numerical columns.
+- Create **interactive scatter plots** to explore relationships between numerical columns.
+- Generate **histograms** with optional KDE overlays for numerical columns.
+- Visualize the distribution of **categorical columns** with **pie charts** (both Plotly and Matplotlib options available).
+""")
 # File Upload
 uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
 
